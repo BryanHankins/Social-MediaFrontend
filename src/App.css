@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0e0e0;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 375px;
+  height: 812px;
+  background-color: #333;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.title-top {
+  font-size: 14px;
+  color: #888;
+  margin: 5px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.nav-button {
+  flex: 1;
+  background-color: #444;
+  border: 1px solid #555;
+  color: #ccc;
+  padding: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 3px;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #666;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  background-color: #444;
+  border-radius: 12px;
+  border: 1px solid #555;
+}
+
+.search-bar input {
+  width: 85%;
+  padding: 10px;
+  background-color: #555;
+  border: none;
+  border-radius: 8px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.menu-button {
+  background-color: transparent;
+  border: none;
+  color: #ccc;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.card {
+  width: 100%;
+  height: 100px;
+  background-color: #555;
+  border-radius: 15px;
+  margin: 5px 0;
+  position: relative;
+  border: 1px solid #666;
+  transition: transform 0.3s ease;
+}
+
+.card.large {
+  height: 140px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #888;
+  border-radius: 50%;
+  bottom: 10px;
+  right: 10px;
+}
+
+.footer-icon {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  font-size: 28px;
+  color: #ccc;
+}
