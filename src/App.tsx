@@ -22,9 +22,10 @@ const App: React.FC = () => {
         </nav>
         <Routes>
           <Route path="/" element={<Profileh />} />
-          <Route path="/events" element={<Profile />} />
-          <Route path="/events" element={<Feed />} />
-          <Route path="/about" element={<Discover />} />
+          <Route path="/Profileh" element={<Profileh />} />
+          <Route path="/Profile" element={<Profile />} />
+          <Route path="/Feed" element={<Feed />} />
+          <Route path="/Discover" element={<Discover />} />
         </Routes>
       </div>
     </Router>
